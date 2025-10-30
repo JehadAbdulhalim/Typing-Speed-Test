@@ -1,0 +1,105 @@
+/*  
+    You could use other's code but don't edit it. In case you need to make changes, copy the code to your file.
+    Only add code to the file with your name. Mixing our code together will cause confusion and changing other's code will cause more.
+*/
+
+div#game{
+    line-height: 35px;
+    max-height: 115px;
+    overflow: hidden; 
+    position: relative;
+}
+
+#header{
+    margin: 20px 60px;
+}
+
+div.word{
+    display: inline-block;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 5px;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#cursor{
+    width: 2px;
+    height: 1.5rem;
+    background-color: #eee;
+    position: fixed;
+    top:250px;
+    
+    animation: blink .3s infinite;
+}
+
+#div{
+    outline: 0;
+}
+
+.letter.correct{
+    color: #39890e;
+}
+
+.letter.incorrect{
+    color: red;
+}
+
+#info{
+    display: inline;
+    color: #E2B714;
+    margin-left: 60px;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: 'Cursive', monospace;
+
+}
+
+#game.over #words{
+    opacity: .5;
+}
+
+#game.over #cursor{
+    display: none;
+}
+
+#words {
+    filter: blur(5px);
+    width: 800px;
+    font-size: x-large;
+    margin: 0 auto;
+}
+
+#focuserror {
+    position: absolute;
+    inset: 0;
+    text-align: center;
+    padding-top: 35px;
+    font-weight: bold;
+    color: #E2B714;
+}
+
+#game:focus #words {
+    filter: blur(0);
+}
+
+#game:focus #focuserror {
+    display: none;
+}
+
+#game:focus {
+    outline: none;
+}
+
+.letter{
+    font-family: 'Cursive', monospace;
+}

@@ -1,0 +1,174 @@
+/*  
+    You could use other's code but don't edit it. In case you need to make changes, copy the code to your file.
+    Only add code to the file with your name. Mixing our code together will cause confusion and changing other's code will cause more.
+*/
+
+/* General */
+:root{
+    --bg-color: #323437;
+    --primary-color: #E2B714;
+    --text-primary-color: #D1D0C5;
+    --text-secondary-color: #646669;
+    --foreground-color: #2C2E31;
+    --hover-color: #959698;
+}
+
+.body-general{
+    background-color: var(--bg-color);
+    color: var(--text-primary-color);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.main-general {
+    padding: 24px;
+    margin: 0px auto;
+    width: 75%;
+}
+
+.main-item-background-general{
+    background-color: var(--foreground-color);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.main-item-general{
+    padding: 6px;
+    border-radius: 8px;
+}
+
+h1, h2, h3{
+    color: var(--text-primary-color);
+}
+
+p{
+    color: var(--text-primary-color);
+}
+
+/* Header style */
+.header {
+    padding: 24px;
+    width: 75%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-side {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.icon-button {
+    color: var(--text-secondary-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-button:hover {
+    color: var(--hover-color);
+}
+
+/* footer style */
+footer {
+    width: 45%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 50px;
+}
+
+.footer-button {
+    color: var(--text-secondary-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-button:hover {
+    color: var(--hover-color);
+}
+
+/* Main page css style */
+.main-page-body {
+    background-color: var(--bg-color);
+    color: var(--text-primary-color);
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 98vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+/* Main Page control row style */
+.control-row {
+    width: 15%;
+    margin: 0px auto;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--foreground-color);
+    color: var(--text-secondary-color);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.control-button{
+    border: none;
+    background: none;
+    align-self: center;
+    color: currentColor;
+    font-size: 14px;
+}
+
+.control-button:hover {
+    color: var(--hover-color);
+}
+
+/* Main Page Grid style */
+.main-page-container {
+    padding: 24px;
+    display: grid;
+    gap: 8px;
+    margin: 0px auto;
+    width: 75%;
+}
+
+.main-page-grid-item {
+    background-color: var(--foreground-color);
+    padding: 6px;
+    border-radius: 8px;
+}
+
+/* Profile page style */
+.profile-statistics {
+    display: flex;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.statistics-element {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.statistics-element:first-child {
+    margin-left: 0;
+}
+
+.statistics-element:last-child {
+    margin-right: 0;
+}
